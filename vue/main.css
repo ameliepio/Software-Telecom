@@ -1,0 +1,39 @@
+h1{
+width:100%;
+display: flex;
+justify-content:center;
+background-color: blue;
+font-size: 25px;
+color: red;
+}
+
+
+.login{
+display: flex;
+justify-content: flex-end;
+margin-right: 15%;
+}
+
+header{
+width:100%;
+height: auto;
+background-color: yellow;
+}
+
+.list{
+display: flex;
+justify-content: space-between;
+width: 30%;
+background-color: green;
+height: 70%;
+}
+
+button{
+display: flex;
+flex-direction: column;
+justify-content:center;
+width: 60%;
+height:15%;
+background-color: pink;
+border-radius: 10px;
+}
