@@ -11,7 +11,6 @@ function Insertproject ($name_project,$manager_project,$city,$description,$start
   try
   {
 
-
     $req->execute(array(
 
         'name_project' => $name_project,
@@ -33,15 +32,13 @@ function Insertproject ($name_project,$manager_project,$city,$description,$start
 
 }
 
-
 // // inserer les projet dans la page d'accueil
 //
-// function Selectproject($name_project,$manager_project,$city,$description,$start_date,$end_date){
-// global $bdd;
-//
-// $requete = $bdd->prepare('SELECT * FROM projet WHERE name_project = :name_project AND manager_project=:manager_project AND city=:city AND description=:description AND start_date=:start_date AND end_date=:end_date ');
-//
-//
+function Selectproject(){
+global $bdd;
+
+$requete = $bdd->query('SELECT * FROM projet');
+
 // $requete->execute(array(
 //
 //   'name_project' => $name_project,
@@ -55,34 +52,9 @@ function Insertproject ($name_project,$manager_project,$city,$description,$start
 //   'start_date'=> $start_date,
 //
 //   'end_date'=> $end_date));
-//
-//     $resultat = $requete->fetch();
-//
-//     return $resultat;
-//
-//   }
 
+  $resultat = $requete->fetchAll();
+  //
+  return $resultat;
 
-
-      // Insert task in bdd
-
-  function Inserttask ($task_description,$deadline){
-    global $bdd;
-
-    $req = $bdd->prepare('INSERT INTO task(task_description,deadline)
-      VALUES(:task_description,:deadline)');
-    try
-    {
-
-    $req->execute(array(
-
-          'task_description' => $task_description,
-
-          'deadline' => $deadline,));
-      }
-      catch (Exception $e)
-      {
-        die($e->getMessage());
-      }
-
-  }
+}

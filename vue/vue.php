@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
       <link rel="stylesheet" href="main.css">
+
     <title>
 
 
@@ -23,8 +24,6 @@
 
 <a href="formController.php">Add project</a>
 <!-- Add project -->
-
-
 
 
 
