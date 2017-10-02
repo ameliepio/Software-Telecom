@@ -1,6 +1,7 @@
 <?php
 
 // si on envoi des donnees, je les transliterator_transliterate
+include('../vue/header.php');
 include('../vue/forms_project.php');
 include ('../model/project_function.php');
 include ('../model/task.php');
@@ -28,14 +29,8 @@ if (isset($_POST['name_project']) AND isset($_POST['manager_project']) AND isset
 //AFFICHAGE projet
 
 $affichage= Selectproject();
+include ('../vue/cards_project.php');
 
 // var_dump  ($affichage);
 
 //faire une foreach
-
-
-foreach ($affichage as $affichage){
-
- echo $affichage;
-
-}

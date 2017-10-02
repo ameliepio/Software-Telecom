@@ -1,14 +1,22 @@
+.row{
+border:solid;
+border-radius: 5px;
+
+
+
+}
+
 h1{
 width:100%;
 display: flex;
 justify-content:center;
-background-color: blue;
-font-size: 25px;
-color: red;
+background-color: yellow;
+font-size: 50px;
+color: grey;
 }
 
 
-.login{
+.linkproject{
 display: flex;
 justify-content: flex-end;
 margin-right: 15%;
@@ -16,8 +24,8 @@ margin-right: 15%;
 
 header{
 width:100%;
-height: auto;
-background-color: yellow;
+height: 20%;
+background-color: black;
 }
 
 .list{
@@ -28,7 +36,7 @@ background-color: green;
 height: 70%;
 }
 
-button{
+.submit{
 display: flex;
 flex-direction: column;
 justify-content:center;

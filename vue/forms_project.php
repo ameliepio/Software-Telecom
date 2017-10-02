@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+    <!-- formulaire du projet qui part en bdd  -->
+    <?php
+require_once('header.php');
 
-      <link rel="stylesheet" href="main.css">
-    <body>
+ ?>
+ <div class="row">
 
-      <!-- formulaire du projet qui part en bdd  -->
 
       <!-- project form that starts in bdd -->
     <form action="formController.php" method="post">
@@ -30,11 +28,12 @@
     <input type="text" name="deadline" placeholder="deadline"><br>
 
 
-  <input type="submit" name="submittask" value="afficher">
+  <input type="submit" name="submittask" value="Add task">
 
 </form>
 
+ </div>
+<?php
+require_once('footer.php');
 
-
-    </body>
-  </html>
+?>

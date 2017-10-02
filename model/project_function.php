@@ -39,19 +39,6 @@ global $bdd;
 
 $requete = $bdd->query('SELECT * FROM projet');
 
-// $requete->execute(array(
-//
-//   'name_project' => $name_project,
-//
-//   'manager_project' => $manager_project,
-//
-//   'city' => $city,
-//
-//   'description'=> $description,
-//
-//   'start_date'=> $start_date,
-//
-//   'end_date'=> $end_date));
 
   $resultat = $requete->fetchAll();
   //
