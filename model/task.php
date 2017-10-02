@@ -26,3 +26,14 @@ function Inserttask($task_description,$deadline){
     }
 
 }
+function Selecttask(){
+global $bdd;
+
+$reponse = $bdd->query('SELECT * FROM task ORDER BY ID DESC LIMIT 10');
+
+
+  $result = $reponse->fetchAll();
+  //
+  return $result;
+
+}

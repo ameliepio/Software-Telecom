@@ -11,7 +11,7 @@ if (isset($_POST['name_project']) AND isset($_POST['manager_project']) AND isset
   Insertproject($_POST['name_project'],$_POST['manager_project'],$_POST['city'],$_POST['description'],$_POST['start_date'],$_POST['end_date']);
   }
   else{
-      echo 'not good';
+      // echo 'not good';
   }
 
 
@@ -23,13 +23,16 @@ if (isset($_POST['name_project']) AND isset($_POST['manager_project']) AND isset
   // echo "ok";
   }
   else{
-        echo 'bad';
+        // echo 'bad';
     }
 
 //AFFICHAGE projet
 
 $affichage= Selectproject();
+
+$task=Selecttask();
 include ('../vue/cards_project.php');
+
 
 // var_dump  ($affichage);
 

@@ -14,19 +14,21 @@
 <div class="row">
   <h2>List project</h2>
   <ul class="card" style="width:50%">
-    <li>name_project<?php  echo $resultat['name_project'];?></li>
-    <li>manager_project<?php  echo $resultat['manager_project'];?></li>
-    <li>city<?php  echo $resultat['city'];?></li>
-    <li>description<?php  echo $resultat['description'];?></li>
-    <li>start_date</li><?php  echo $resultat['start_date'];?></li>
-    <li>end_date</li><?php  echo $resultat['end_date'];?></li><br>
+    <li>name_project: <?php  echo $resultat['name_project'];?></li>
+    <li>manager_project: <?php  echo $resultat['manager_project'];?></li>
+    <li>city: <?php  echo $resultat['city'];?></li>
+    <li>description: <?php  echo $resultat['description'];?></li>
+    <li>start_date: </li><?php  echo $resultat['start_date'];?></li>
+    <li>end_date: </li><?php  echo $resultat['end_date'];?></li><br>
 
-    <li>task_description</li>
-    <li>deadline</li>
-  </ul>
+<?php foreach ($task as $key => $result): ?>
+    <li>task_description:<?php  echo $result['task_description'];?></li>
+    <li>deadline: <?php  echo $result['deadline'];?></li>
+</ul>
 </div>
-
 <?php endforeach; ?>
+<?php endforeach; ?>
+
 
 
 

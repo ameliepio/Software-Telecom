@@ -15,7 +15,7 @@
 <!-- Google fonts header  -->
         <link rel="shortcut icon" href="favicon.ico" type="x-icon">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Fredericka+the+Great|Sacramento|Dosis" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <!-- Google fonts header  -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -32,8 +32,26 @@
 
 <div class="linkproject">
 
-</div>
-<a href="formController.php">Add project</a>
+<a href="formController.php">Add new project +</a>
 
 </div>
+
+<!-- deconnexion forms -->
+<div class="login">
+<a href="formController.php" class="btn decxbtn mt-5">deconnexion</a>
+
+</div>
+<!-- password -->
+
+
+<div id="administrateur" class="text-center">
+	 <form action="administrateur.php" method="post" accept-charset="utf-8">
+         User name:
+         <input type="text" name="user">
+         User password:
+
+        <input type="password" name="psw">
+	    <input type="submit" value="se connecte" />
+
+	 </form>
 </header>

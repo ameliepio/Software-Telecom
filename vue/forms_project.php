@@ -4,8 +4,6 @@ require_once('header.php');
 
  ?>
  <div class="row">
-
-
       <!-- project form that starts in bdd -->
     <form action="formController.php" method="post">
         <input type="text" name="name_project" placeholder="name_project"> <br>
@@ -17,19 +15,19 @@ require_once('header.php');
 
         <input type="submit" name="submitproject" value="envoyer">
 
-    </form>
+
 
 
 <!-- formulaire tâche qui part en bdd -->
 <!-- task form that start in bdd -->
-<p>TASK</p>
+<p>Task list</p>
 <form action="formController.php" method="post">
     <input type="text" name="task_description" placeholder="task_description"> <br>
     <input type="text" name="deadline" placeholder="deadline"><br>
 
 
   <input type="submit" name="submittask" value="Add task">
-
+  </form>
 </form>
 
  </div>
