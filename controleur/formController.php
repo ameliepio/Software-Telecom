@@ -34,6 +34,41 @@ $task=Selecttask();
 include ('../vue/cards_project.php');
 
 
-// var_dump  ($affichage);
+//password
+if( isset($_POST['psw'])&&isset($_POST['user']) )
+{
+   $password=$_POST['psw'];
+    $user=htmlspecialchars($_POST['user']);
 
-//faire une foreach
+
+      $req=$bdd->prepare('SELECT id  FROM user  WHERE name_user=? AND password=?');
+     $req->execute(array($_POST['user'],$_POST['psw']));
+     $compte_existe=$req->fetch();
+
+
+
+
+     if(!$compte_existe)
+     {
+          echo "<script language=\"javascript\">";
+         echo "alert('mot de passe ou nom utilistaur  incorect')";
+         echo "</script>";
+         header('Location:connexion_sql.php');
+
+       }
+        else {  include("header.php");
+
+
+                 $_SESSION['id']=$compte_existe['id'];
+                 $_SESSION['pseudo']=$user;
+
+              }
+    }
+
+?>
+
+
+
+
+
+</div>
