@@ -12,6 +12,7 @@
 
 
 <div class="row">
+
   <h2>List project</h2>
   <ul class="card" style="width:50%">
     <li>name_project: <?php  echo $resultat['name_project'];?></li>

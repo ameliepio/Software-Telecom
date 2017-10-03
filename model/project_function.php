@@ -37,7 +37,7 @@ function Insertproject ($name_project,$manager_project,$city,$description,$start
 function Selectproject(){
 global $bdd;
 
-$requete = $bdd->query('SELECT * FROM projet ');
+$requete = $bdd->query('SELECT * FROM projet ORDER BY ID DESC LIMIT 5');
 
 
   $resultat = $requete->fetchAll();
