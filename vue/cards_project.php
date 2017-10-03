@@ -20,8 +20,13 @@
     <li>description: <?php  echo $resultat['description'];?></li>
     <li>start_date: </li><?php  echo $resultat['start_date'];?></li>
     <li>end_date: </li><?php  echo $resultat['end_date'];?></li><br>
+  </ul>
+  </div>
 
 <?php foreach ($task as $key => $result): ?>
+  <div class="row">
+  <h2>List task</h2>
+  <ul class="tasks" style="width:50%">
     <li>task_description:<?php  echo $result['task_description'];?></li>
     <li>deadline: <?php  echo $result['deadline'];?></li>
 </ul>
@@ -34,10 +39,6 @@
 
   <!-- <button type="button" onclick=href="forms_project.php">ADD TASK +</button> -->
 <!-- ajouter une ligne avec les tâches  -->
-
-
-
-
 
 
   </body>

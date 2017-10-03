@@ -3,7 +3,11 @@
 require_once('header.php');
 
  ?>
+
  <div class="row">
+    <div class="linkproject">
+   <a href="formController.php"><strong>Add new project +</strong></a>
+ </div>
       <!-- project form that starts in bdd -->
     <form action="formController.php" method="post">
         <input type="text" name="name_project" placeholder="name_project"> <br>

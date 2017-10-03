@@ -29,7 +29,7 @@ function Inserttask($task_description,$deadline){
 function Selecttask(){
 global $bdd;
 
-$reponse = $bdd->query('SELECT * FROM task ORDER BY id DESC LIMIT 1');
+$reponse = $bdd->query('SELECT * FROM task ');
 
 
   $result = $reponse->fetchAll();

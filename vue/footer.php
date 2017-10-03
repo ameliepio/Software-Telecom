@@ -1,6 +1,15 @@
 <footer>
 
+  <div class="connexion-button col  mr-0">
+  <?php
+    if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
 
+   {
+
+  echo '<a href="deconnexion.php" target="_blank"> <input type="button"  class="btn" value="Déconnexion'.$_SESSION['pseudo'].'"> </a>';
+
+    }
+    ?>
 
   </footer>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

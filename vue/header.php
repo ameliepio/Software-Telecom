@@ -30,11 +30,6 @@
 
 <h1>Software and Telecom</h1>
 
-<div class="linkproject">
-
-<a href="formController.php">Add new project +</a>
-
-</div>
 
 <!-- deconnexion forms -->
 <div class="login">
@@ -44,13 +39,24 @@
 <!-- password -->
 
 <div id="administrateur" class="text-center">
-	 <form action="formController.php" method="post" accept-charset="utf-8">
-         User name:
+	 <form action="formController.php" method="post" accept-charset="utf-8"><strong>
+         User name:</strong>
          <input type="text" name="user">
-         User password:
+         <strong>User password:</strong>
 
         <input type="password" name="psw">
 	    <input type="submit" value=" connect" />
 
 	 </form>
-</header>
+
+<div class="connexion-button col  mr-0">
+<?php
+  if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
+
+ {
+
+echo '<a href="deconnexion.php" target="_blank"> <input type="button"  class="btn" value="Déconnexion'.$_SESSION['pseudo'].'"> </a>';
+
+  }
+  ?>
+  </header>
